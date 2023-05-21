@@ -1,6 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/mophend");
 
 /* Resetter */
@@ -11,26 +10,19 @@
   list-style: none;
 }
 
-/* Color Properties */
 :root {
+  /* Color Properties */
   --color-darker: rgb(48, 48, 48);
   --color-dark: rgb(64, 64, 64);
   --color-light: rgb(194, 194, 194);
   --color-lighter: rgb(255, 255, 255);
+  --accent: #fdf589;
 
-  --color-black: #000000;
-  --text-clr: #191a20;
-  --text-lighter-clr: #5b5c60;
-  --color-light-grey: #b4b4b4;
-
-  /* you could add an accent color for CTAs and anchor tags ;-) */
-  /* --text-display: "Playfair Display", serif; */
+  /* Fonts */
   --text-body: "Euclid Circular B";
   --text-display: "Mophend", sans-serif;
   --text-header: "Neue Machina";
 }
-
-/* Fonts */
 
 html {
   font-size: 16px;
@@ -63,6 +55,7 @@ h2 {
   opacity: 80%;
 }
 
+/*Cards*/
 h3 {
   font-family: var(--text-body);
   font-size: 1.125rem;
@@ -163,6 +156,7 @@ header {
   color: var(--color-light);
 }
 
+/*To DO: Needs image*/
 .header_graphics {
   width: 35vw;
   height: 35vw;
@@ -228,6 +222,11 @@ header {
   padding-left: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+.inputFlex {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Footer */
