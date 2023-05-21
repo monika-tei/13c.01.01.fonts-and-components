@@ -36,12 +36,6 @@ h3 {
   color: var(--color-darker);
 }
 
-h1 {
-  font-family: var(--text-display);
-  font-size: 5.653rem;
-  padding-bottom: 3.2rem;
-}
-
 h2 {
   font-family: var(--text-body);
   font-weight: 500;
@@ -75,6 +69,205 @@ p {
 
 .info_text p {
   padding-bottom: 1.5rem;
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darker);
+}
+
+nav a {
+  font-family: var(--text-header);
+  color: white;
+  text-decoration: none;
+}
+
+footer li {
+  font-family: var(--text-header);
+  line-height: 1.25rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-dark);
+}
+
+h1 {
+  font-family: var(--text-display);
+  font-size: 4.768rem;
+  padding-bottom: 3.2rem;
+  color: var(--color-lighter);
+}
+
+.header_text {
+  width: 40vw;
+  min-width: 300px;
+  padding-bottom: 2rem;
+}
+
+.header_text p {
+  color: var(--color-light);
+}
+
+/*No-IMG*/
+.header_graphics {
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--color-darker);
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+#intro {
+  display: flex;
+  min-height: 65vh;
+  padding: 0px 15rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-light);
+}
+
+.intro_text {
+  width: 40vw;
+  min-width: 450px;
+}
+
+/*No img*/
+.intro_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: var(--color-dark);
+}
+
+/*CARDS*/
+#cards {
+  min-height: 80vh;
+  padding: 5rem 2rem;
+}
+
+#card_container {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.card {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid pink; */
+  border-radius: 12px;
+  justify-content: space-between;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card_image {
+  width: auto;
+  height: 10vw;
+  min-width: 150px;
+  min-height: 150px;
+  margin-bottom: 1rem;
+}
+
+.card_name {
+  font-size: 1.25rem;
+  color: var(--color-dark);
+  margin-bottom: 0.2rem;
+}
+.card_slogan {
+  color: var(--color-dark);
+  line-height: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.card_title {
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.cardBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#info {
+  display: flex;
+  min-height: 65vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+.info_text {
+  width: 60vw;
+  min-width: 300px;
+}
+
+#contact {
+  display: flex;
+  min-height: 65vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-darker);
+}
+
+footer section {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer h2,
+footer h3 {
+  color: var(--color-lighter);
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
 }
 
 /* UI Elements */
@@ -111,151 +304,30 @@ input.card_button_positive {
   font-family: "Neue Machina";
   padding: 0.1rem 1.125rem;
   margin-top: 0.55rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.3rem 1.8rem;
 }
 
-/* Menu */
-nav {
-  display: flex;
-  padding: 0.5rem;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-darker);
+/*Hovered*/
+button:hover {
+  background-color: var(--accent);
+  color: var(--color-darker);
+  transition: 0.4s all ease-out;
+}
+footer a:hover {
+  color: var(--accent);
 }
 
-nav a {
-  font-family: var(--text-header);
-  color: white;
-  text-decoration: none;
-}
-
-footer li {
-  font-family: var(--text-header);
-  line-height: 1.25rem;
-}
-
-/* Header */
-header {
-  display: flex;
-  min-height: 80vh;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.cardBtn .card_button_negative:hover,
+.cardBtn .card_button_positive:hover {
   background-color: var(--color-dark);
-}
-
-.header_text {
-  width: 40vw;
-  min-width: 300px;
-}
-
-.header_text h1 {
   color: var(--color-lighter);
+  transition: 0.3s all ease-out;
 }
 
-.header_text p {
-  color: var(--color-light);
-}
-
-/*To DO: Needs image*/
-.header_graphics {
-  width: 35vw;
-  height: 35vw;
-  min-width: 300px;
-  min-height: 300px;
-  background-color: var(--color-darker);
-}
-
-/* Sections */
-#intro {
-  display: flex;
-  min-height: 80vh;
-  padding: 0px 15rem;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: var(--color-light);
-}
-
-.intro_text {
-  width: 40vw;
-  min-width: 450px;
-}
-
-.intro_graphics {
-  width: 15vw;
-  height: 15vw;
-  min-width: 150px;
-  min-height: 150px;
-  background-color: var(--color-dark);
-}
-
-#cards {
-  min-height: 80vh;
-  padding: 5rem 2rem;
-}
-
-#card_container {
-  display: grid;
-  margin-top: 5rem;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1rem;
-  justify-items: center;
-}
-
-#info {
-  display: flex;
-  min-height: 80vh;
-  padding-left: 2rem;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-light);
-}
-
-.info_text {
-  width: 60vw;
-  min-width: 300px;
-}
-
-#contact {
-  display: flex;
-  min-height: 80vh;
-  padding-left: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.inputFlex {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Footer */
-footer {
-  display: flex;
-  padding: 5vh 2rem;
-  align-items: top;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: var(--color-darker);
-}
-
-footer h2,
-footer h3 {
-  color: var(--color-lighter);
-}
-
-footer a {
-  color: var(--color-light);
-}
-
-footer section {
-  display: flex;
-  max-width: 50vw;
-  align-items: top;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-footer section div {
-  margin: 0px 1rem 1rem 1rem;
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3.052rem;
+  }
 }
